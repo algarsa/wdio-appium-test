@@ -1,0 +1,78 @@
+[38;5;112m[Appium][0m You can provide the following URLs in your client code to connect to this server:
+	http://192.168.56.1:4723/
+	http://192.168.15.75:4723/
+	http://127.0.0.1:4723/ (only accessible from the same host)
+[38;5;112m[Appium][0m No drivers have been installed in C:\Users\Alice-Asus\.appium. Use the "appium driver" command to install the one(s) you want to use.
+[38;5;112m[Appium][0m No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m [90m{"capabilities":{"alwaysMatch":{"platformName":"Android","platformVersion":"13.0","deviceName":"Pixel_4","udid":"emulator-5554","autoGrantPermissions":true,"app":"apps/android.wdio.native.app.v1.0.8.apk","automationName":"UiAutomator2","appPackage":"com.wdiodemoapp","appActivity":"com.wdiodemoapp.MainActivity"},"firstMatch":[{}]}}[39m
+[38;5;108m[AppiumDriver@5f25][0m Calling AppiumDriver.createSession() with args: [null,null,{"alwaysMatch":{"platformName":"Android","platformVersion":"13.0","deviceName":"Pixel_4","udid":"emulator-5554","autoGrantPermissions":true,"app":"apps/android.wdio.native.app.v1.0.8.apk","automationName":"UiAutomator2","appPackage":"com.wdiodemoapp","appActivity":"com.wdiodemoapp.MainActivity"},"firstMatch":[{}]}]
+[38;5;108m[AppiumDriver@5f25][0m Event 'newSessionRequested' logged at 1752744943816 (06:35:43 GMT-0300 (Horário Padrão de Brasília))
+[38;5;112m[Appium][0m Could not parse W3C capabilities: All non-standard capabilities should have a vendor prefix. The following capabilities did not have one: platformVersion,deviceName,udid,autoGrantPermissions,app,automationName,appPackage,appActivity
+[38;5;108m[AppiumDriver@5f25][0m Event 'newSessionStarted' logged at 1752744943819 (06:35:43 GMT-0300 (Horário Padrão de Brasília))
+[38;5;108m[AppiumDriver@5f25][0m Encountered internal error running command: InvalidArgumentError: All non-standard capabilities should have a vendor prefix. The following capabilities did not have one: platformVersion,deviceName,udid,autoGrantPermissions,app,automationName,appPackage,appActivity
+    at parseCaps (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\capabilities.ts:253:11)
+    at processCapabilities (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\capabilities.ts:325:43)
+    at parseCapsForInnerDriver (D:\workspace\wdio-appium-test\node_modules\appium\lib\utils.js:156:40)
+    at AppiumDriver.createSession (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:300:49)
+    at runCommandPromise (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\driver.ts:116:20)
+    at AppiumDriver.executeCommand (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\driver.ts:161:15)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at defaultBehavior (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:752:16)
+    at AppiumDriver.executeWrappedCommand (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:869:16)
+    at AppiumDriver.executeCommand (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:768:17)
+    at asyncHandler (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\protocol\protocol.js:389:19)
+[38;5;86m[HTTP][0m [37m<-- POST /session [39m[33m400[39m [90m230 ms - 1791[39m [90m[39m
+[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m [90m{"capabilities":{"alwaysMatch":{"platformName":"Android","platformVersion":"13.0","deviceName":"Pixel_4","udid":"emulator-5554","autoGrantPermissions":true,"app":"apps/android.wdio.native.app.v1.0.8.apk","automationName":"UiAutomator2","appPackage":"com.wdiodemoapp","appActivity":"com.wdiodemoapp.MainActivity"},"firstMatch":[{}]}}[39m
+[38;5;108m[AppiumDriver@5f25][0m Calling AppiumDriver.createSession() with args: [null,null,{"alwaysMatch":{"platformName":"Android","platformVersion":"13.0","deviceName":"Pixel_4","udid":"emulator-5554","autoGrantPermissions":true,"app":"apps/android.wdio.native.app.v1.0.8.apk","automationName":"UiAutomator2","appPackage":"com.wdiodemoapp","appActivity":"com.wdiodemoapp.MainActivity"},"firstMatch":[{}]}]
+[38;5;108m[AppiumDriver@5f25][0m Event 'newSessionRequested' logged at 1752744944207 (06:35:44 GMT-0300 (Horário Padrão de Brasília))
+[38;5;112m[Appium][0m Could not parse W3C capabilities: All non-standard capabilities should have a vendor prefix. The following capabilities did not have one: platformVersion,deviceName,udid,autoGrantPermissions,app,automationName,appPackage,appActivity
+[38;5;108m[AppiumDriver@5f25][0m Event 'newSessionStarted' logged at 1752744944208 (06:35:44 GMT-0300 (Horário Padrão de Brasília))
+[38;5;108m[AppiumDriver@5f25][0m Encountered internal error running command: InvalidArgumentError: All non-standard capabilities should have a vendor prefix. The following capabilities did not have one: platformVersion,deviceName,udid,autoGrantPermissions,app,automationName,appPackage,appActivity
+    at parseCaps (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\capabilities.ts:253:11)
+    at processCapabilities (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\capabilities.ts:325:43)
+    at parseCapsForInnerDriver (D:\workspace\wdio-appium-test\node_modules\appium\lib\utils.js:156:40)
+    at AppiumDriver.createSession (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:300:49)
+    at runCommandPromise (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\driver.ts:116:20)
+    at AppiumDriver.executeCommand (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\driver.ts:161:15)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at defaultBehavior (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:752:16)
+    at AppiumDriver.executeWrappedCommand (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:869:16)
+    at AppiumDriver.executeCommand (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:768:17)
+    at asyncHandler (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\protocol\protocol.js:389:19)
+[38;5;86m[HTTP][0m [37m<-- POST /session [39m[33m400[39m [90m5 ms - 1791[39m [90m[39m
+[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m [90m{"capabilities":{"alwaysMatch":{"platformName":"Android","platformVersion":"13.0","deviceName":"Pixel_4","udid":"emulator-5554","autoGrantPermissions":true,"app":"apps/android.wdio.native.app.v1.0.8.apk","automationName":"UiAutomator2","appPackage":"com.wdiodemoapp","appActivity":"com.wdiodemoapp.MainActivity"},"firstMatch":[{}]}}[39m
+[38;5;108m[AppiumDriver@5f25][0m Calling AppiumDriver.createSession() with args: [null,null,{"alwaysMatch":{"platformName":"Android","platformVersion":"13.0","deviceName":"Pixel_4","udid":"emulator-5554","autoGrantPermissions":true,"app":"apps/android.wdio.native.app.v1.0.8.apk","automationName":"UiAutomator2","appPackage":"com.wdiodemoapp","appActivity":"com.wdiodemoapp.MainActivity"},"firstMatch":[{}]}]
+[38;5;108m[AppiumDriver@5f25][0m Event 'newSessionRequested' logged at 1752744944731 (06:35:44 GMT-0300 (Horário Padrão de Brasília))
+[38;5;112m[Appium][0m Could not parse W3C capabilities: All non-standard capabilities should have a vendor prefix. The following capabilities did not have one: platformVersion,deviceName,udid,autoGrantPermissions,app,automationName,appPackage,appActivity
+[38;5;108m[AppiumDriver@5f25][0m Event 'newSessionStarted' logged at 1752744944732 (06:35:44 GMT-0300 (Horário Padrão de Brasília))
+[38;5;108m[AppiumDriver@5f25][0m Encountered internal error running command: InvalidArgumentError: All non-standard capabilities should have a vendor prefix. The following capabilities did not have one: platformVersion,deviceName,udid,autoGrantPermissions,app,automationName,appPackage,appActivity
+    at parseCaps (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\capabilities.ts:253:11)
+    at processCapabilities (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\capabilities.ts:325:43)
+    at parseCapsForInnerDriver (D:\workspace\wdio-appium-test\node_modules\appium\lib\utils.js:156:40)
+    at AppiumDriver.createSession (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:300:49)
+    at runCommandPromise (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\driver.ts:116:20)
+    at AppiumDriver.executeCommand (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\driver.ts:161:15)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at defaultBehavior (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:752:16)
+    at AppiumDriver.executeWrappedCommand (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:869:16)
+    at AppiumDriver.executeCommand (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:768:17)
+    at asyncHandler (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\protocol\protocol.js:389:19)
+[38;5;86m[HTTP][0m [37m<-- POST /session [39m[33m400[39m [90m3 ms - 1791[39m [90m[39m
+[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m [90m{"capabilities":{"alwaysMatch":{"platformName":"Android","platformVersion":"13.0","deviceName":"Pixel_4","udid":"emulator-5554","autoGrantPermissions":true,"app":"apps/android.wdio.native.app.v1.0.8.apk","automationName":"UiAutomator2","appPackage":"com.wdiodemoapp","appActivity":"com.wdiodemoapp.MainActivity"},"firstMatch":[{}]}}[39m
+[38;5;108m[AppiumDriver@5f25][0m Calling AppiumDriver.createSession() with args: [null,null,{"alwaysMatch":{"platformName":"Android","platformVersion":"13.0","deviceName":"Pixel_4","udid":"emulator-5554","autoGrantPermissions":true,"app":"apps/android.wdio.native.app.v1.0.8.apk","automationName":"UiAutomator2","appPackage":"com.wdiodemoapp","appActivity":"com.wdiodemoapp.MainActivity"},"firstMatch":[{}]}]
+[38;5;108m[AppiumDriver@5f25][0m Event 'newSessionRequested' logged at 1752744945743 (06:35:45 GMT-0300 (Horário Padrão de Brasília))
+[38;5;112m[Appium][0m Could not parse W3C capabilities: All non-standard capabilities should have a vendor prefix. The following capabilities did not have one: platformVersion,deviceName,udid,autoGrantPermissions,app,automationName,appPackage,appActivity
+[38;5;108m[AppiumDriver@5f25][0m Event 'newSessionStarted' logged at 1752744945744 (06:35:45 GMT-0300 (Horário Padrão de Brasília))
+[38;5;108m[AppiumDriver@5f25][0m Encountered internal error running command: InvalidArgumentError: All non-standard capabilities should have a vendor prefix. The following capabilities did not have one: platformVersion,deviceName,udid,autoGrantPermissions,app,automationName,appPackage,appActivity
+    at parseCaps (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\capabilities.ts:253:11)
+    at processCapabilities (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\capabilities.ts:325:43)
+    at parseCapsForInnerDriver (D:\workspace\wdio-appium-test\node_modules\appium\lib\utils.js:156:40)
+    at AppiumDriver.createSession (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:300:49)
+    at runCommandPromise (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\driver.ts:116:20)
+    at AppiumDriver.executeCommand (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\basedriver\driver.ts:161:15)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at defaultBehavior (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:752:16)
+    at AppiumDriver.executeWrappedCommand (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:869:16)
+    at AppiumDriver.executeCommand (D:\workspace\wdio-appium-test\node_modules\appium\lib\appium.js:768:17)
+    at asyncHandler (D:\workspace\wdio-appium-test\node_modules\@appium\base-driver\lib\protocol\protocol.js:389:19)
+[38;5;86m[HTTP][0m [37m<-- POST /session [39m[33m400[39m [90m3 ms - 1791[39m [90m[39m
