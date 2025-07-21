@@ -31,7 +31,7 @@ class FormsPage extends Page {
     }
 
     get popupButton() {
-        return $('//*[@resource-id="android:id/message"]');
+        return $('//android.widget.TextView[contains(@text, "This button is active")]');
     }
 
     get txtInputField () {
@@ -45,19 +45,12 @@ class FormsPage extends Page {
     get txtDropdown () {
         return $('//android.widget.TextView[contains(@text, "Select an item")]');
     }
-    get btnOk () {
-        return $('//*[@content-desc="button-OK"]');
-    }
 
     async enterForms () {
         await super.formsWidget.click();
     }
     async clickButtonActive () {
         await this.btnActive.click();
-    }
-
-    async pressBtnOk (){
-        await super.btnOk.click();
     }
 }
 
