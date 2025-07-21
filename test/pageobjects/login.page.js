@@ -30,11 +30,11 @@ class LoginPage extends Page {
     }
 
     get popupSignupSuccessMessage() {
-        return $('//*[@resource-id="android:id/message"]');
+        return $('//android.widget.TextView[contains(@text, "You successfully signed up!")]');
     }
 
     get popupLoginSuccessMessage() {
-        return $('//*[@resource-id="android:id/message"]');
+        return $('//android.widget.TextView[contains(@text, "You are logged in!")]');
     }
 
     get txtAlertInvalidEmail () {
@@ -49,7 +49,7 @@ class LoginPage extends Page {
         return $('//android.widget.TextView[contains(@text, "Please enter the same password")]');
     }
     get btnOk () {
-        return $('//*[@content-desc="button-OK"]');
+        return $('*//android.widget.Button[@text="OK"]');
     }
 
     async signUp (email, password) {
@@ -70,7 +70,7 @@ class LoginPage extends Page {
     }
 
     async pressBtnOk (){
-        await super.btnOk.click();
+        await this.btnOk.click();
     }
 
     async login (email, password) {
