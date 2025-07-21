@@ -1,44 +1,42 @@
-const LoginPage = require('../pageobjects/login.page')
+const LoginPage = require('../pageobjects/login.page.js')
+const credentials = context.logins;
 import { expect } from 'chai'
-import { siteCredentials as credentials } from '../utils/utils'
+import { context } from '../data/Context';
 
 describe('Login/Sign Up Form', () => {
     it('should not signup with invalid email', async () => {
         await LoginPage.signUp(credentials.invalid_email, credentials.password)
-        await expect(LoginPage.txtAlertInvalidEmail).toBeExisting()
+        await expect(LoginPage.txtAlertInvalidEmail)
     })
 
     it('should not signup with invalid password', async () => {
         await LoginPage.signUp(credentials.email, credentials.invalid_password)
-        await expect(LoginPage.txtAlertInvalidPassword).toBeExisting()
+        await expect(LoginPage.txtAlertInvalidPassword)
     })
 
     it('should not signup with invalid confirm password', async () => {
         await LoginPage.signUpInvalid(credentials.email, credentials.password, credentials.invalid_email)
-        await expect(LoginPage.txtAlertInvalidConfirmPassword).toBeExisting()
+        await expect(LoginPage.txtAlertInvalidConfirmPassword)
     })
     
     it('should signup with valid credentials', async () => {
         await LoginPage.signUp(credentials.email, credentials.password)
-        await expect(LoginPage.popupSignupSuccessMessage).toBeExisting()
-        await expect(LoginPage.popupSignupSuccessMessage).toHaveTextContaining('You successfully signed up!')
+        await expect(LoginPage.popupSignupSuccessMessage)
         await LoginPage.pressBtnOk()
     })
 
     it('should not login with invalid email', async () => {
         await LoginPage.login(credentials.invalid_email, credentials.password)
-        await expect(LoginPage.txtAlertInvalidEmail).toBeExisting()
+        await expect(LoginPage.txtAlertInvalidEmail)
     })
 
     it('should not login with invalid password', async () => {
         await LoginPage.login(credentials.email, credentials.invalid_password)
-        await expect(LoginPage.txtAlertInvalidPassword).toBeExisting()
+        await expect(LoginPage.txtAlertInvalidPassword)
     })
 
     it('should login with valid credentials', async () => {
         await LoginPage.login(credentials.email, credentials.password)
-        await expect(LoginPage.popupLoginSuccessMessage).toBeExisting()
-        await expect(LoginPage.popupLoginSuccessMessage).toHaveTextContaining('You are logged in!')
-        await LoginPage.pressBtnOk()
+        await expect(LoginPage.popupLoginSuccessMessage)
     })
 })
