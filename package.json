@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx wdio wdio.conf.js",
     "report": "npx allure generate allure-results --clean && npx allure open",
-    "test-bs-android": "npx wdio config/parallel-android.conf.js"
+    "test-bs-android": "npx wdio config/parallel-android.conf.js",
+    "test-bs-ios": "npx wdio config/parallel-ios.conf.js"
   },
   "keywords": [],
   "author": "Alice Garcia dos Santos",
