@@ -17,7 +17,7 @@ exports.config = {
               buildName: "bstack-webdriverio",
               projectName: "wdio-appium-test",
               buildTag: 'Any build tag goes here. For e.g. ["Tag1","Tag2"]'
-          },*/
+        },*/
       },
     ]
   ],
@@ -56,7 +56,7 @@ exports.config = {
   // other configurations
   updateJob: false,
   specs: [
-    './test/specs/**/*.js',
+    '/workspace/wdio-appium-test/test/specs/*.js',
   ],
   // Patterns to exclude.
     exclude: [
@@ -75,7 +75,13 @@ exports.config = {
   mochaOpts: {
     ui: 'bdd',
     timeout: 40000
-  }
+  },
+
+  reporters: ['spec', ['allure', {
+        outputDir: './allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
 };
 
 // Code to support common capabilities
